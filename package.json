@@ -1,0 +1,28 @@
+{
+  "name": "pack-essentiel",
+  "version": "1.0.0",
+  "description": "Pack Essentiel Atelier GIANNI P. – 5 modules + IA",
+  "main": "main.js",
+  "author": "Jacki PAOLETTI",
+  "license": "SEE DEPOT INPI DSO2026016871",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.gianni.packessentiel",
+    "productName": "Pack Essentiel",
+    "directories": { "output": "dist" },
+    "win": { "target": "portable" },
+    "asar": false
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "electron": "^28.3.3",
+    "electron-builder": "^24.13.3"
+  }
+}
